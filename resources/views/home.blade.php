@@ -91,7 +91,7 @@
 </main>
 
 <!-- About Section -->
-<section id="about" class="py-8 lg:py-24 relative overflow-hidden bg-white">
+<section id="tentang-gerd" class="py-8 lg:py-24 relative overflow-hidden bg-white">
     <div class="max-w-[1400px] mx-auto px-4 md:px-10 lg:px-12 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-20">
             <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Tentang GERD</span>
@@ -166,7 +166,7 @@
 </section>
 
 <!-- Steps Section -->
-<section id="steps" class="py-8 lg:py-24 bg-surface relative">
+<section id="cara-kerja" class="py-8 lg:py-24 bg-surface relative">
     <div class="max-w-[1400px] mx-auto px-4 md:px-10 lg:px-12">
         <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-20">
             <span class="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">Cara Kerja</span>
