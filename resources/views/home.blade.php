@@ -31,7 +31,7 @@
                 </div>
 
                 <!-- Mini Feature Bar -->
-                <div class="bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/50 p-6 flex flex-wrap gap-6 w-fit">
+                <div class="bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/50 p-6 flex flex-wrap gap-6 w-full">
                     <!-- Feature 1 -->
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 shrink-0 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
