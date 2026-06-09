@@ -17,34 +17,34 @@
     </div>
 
     <!-- Container Kuesioner -->
-    <div id="question-container" class="bg-white rounded-3xl shadow-sm hover:shadow-md border border-surface-container-high overflow-hidden transition-all duration-500 transform translate-y-4 opacity-0 relative h-[420px] sm:h-[450px] flex flex-col group">
+    <div id="question-container" class="bg-white rounded-3xl shadow-md border border-surface-container-high/60 overflow-hidden transition-all duration-300 transform translate-y-4 opacity-0 relative min-h-[380px] sm:min-h-[400px] flex flex-col group">
         <!-- Loading State -->
-        <div id="loading-state" class="absolute inset-0 bg-white/80 z-20 flex items-center justify-center backdrop-blur-sm">
-            <div class="animate-spin rounded-full h-14 w-14 border-4 border-primary/20 border-t-primary"></div>
+        <div id="loading-state" class="absolute inset-0 bg-white/70 z-20 flex items-center justify-center backdrop-blur-sm">
+            <div class="animate-spin rounded-full h-12 w-12 border-4 border-primary/20 border-t-primary"></div>
         </div>
 
-        <div class="grow flex flex-col p-6 sm:p-12 relative z-10">
+        <div class="grow flex flex-col p-8 sm:p-10 lg:p-12 relative z-10 justify-between">
             <!-- Decorative circle -->
             <div class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 z-0 pointer-events-none"></div>
             
-            <div class="mb-6 relative z-10">
-                <span id="kode-gejala" class="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20 mb-4 tracking-wider">
+            <div class="relative z-10 flex flex-col items-start">
+                <span id="kode-gejala" class="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20 mb-6 tracking-wider">
                     <span class="material-symbols-outlined text-[14px]">medication</span>
                     G01
                 </span>
+                
+                <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-deep-forest leading-snug mb-8" id="nama-gejala">
+                    <!-- Pertanyaan muncul di sini -->
+                </h3>
             </div>
-            
-            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-deep-forest leading-tight mb-10 relative z-10" id="nama-gejala">
-                <!-- Pertanyaan muncul di sini -->
-            </h3>
 
-            <div class="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10">
-                <button onclick="submitAnswer(true)" class="group w-full py-4 px-6 bg-primary text-white rounded-full font-bold text-base transition-all duration-300 shadow-lg shadow-primary/20 active:bg-forest-green active:scale-95 md:hover:bg-forest-green md:hover:-translate-y-1 md:active:scale-100 focus:outline-none focus:ring-4 focus:ring-primary/30 flex items-center justify-center gap-2">
-                    <span class="material-symbols-outlined transition-transform md:group-hover:scale-110">check_circle</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10 mt-8">
+                <button onclick="submitAnswer(true)" class="group w-full py-4 px-6 bg-primary text-white rounded-full font-bold text-base transition-all duration-300 shadow-md shadow-primary/10 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:scale-95 focus:outline-none focus:ring-4 focus:ring-primary/20 flex items-center justify-center gap-2 cursor-pointer">
+                    <span class="material-symbols-outlined transition-transform group-hover:scale-105">check_circle</span>
                     YA, SAYA MENGALAMI
                 </button>
-                <button onclick="submitAnswer(false)" class="group w-full py-4 px-6 bg-white text-muted-green rounded-full font-bold text-base transition-all duration-300 border-2 border-surface-container-high active:border-red-400 active:text-red-500 active:bg-red-50 active:scale-95 md:hover:border-red-400 md:hover:text-red-500 md:hover:bg-red-50 md:hover:-translate-y-1 md:active:scale-100 focus:outline-none focus:ring-4 focus:ring-red-100 flex items-center justify-center gap-2">
-                    <span class="material-symbols-outlined transition-transform md:group-hover:scale-110">cancel</span>
+                <button onclick="submitAnswer(false)" class="group w-full py-4 px-6 bg-white text-muted-green rounded-full font-bold text-base transition-all duration-300 border border-surface-container-high hover:border-red-200 hover:text-red-500 hover:bg-red-50/50 hover:-translate-y-0.5 active:scale-95 focus:outline-none focus:ring-4 focus:ring-red-100 flex items-center justify-center gap-2 cursor-pointer">
+                    <span class="material-symbols-outlined transition-transform group-hover:scale-105">cancel</span>
                     TIDAK
                 </button>
             </div>

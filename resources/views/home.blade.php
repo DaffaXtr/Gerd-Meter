@@ -3,10 +3,10 @@
 
 @section('content')
 <!-- Main Hero Section -->
-<main id="home" class="relative py-8 lg:py-20 overflow-hidden hero-gradient flex flex-col justify-center min-h-[80vh] lg:min-h-[760px]">
+<main id="home" class="relative py-12 lg:py-24 overflow-hidden hero-gradient flex flex-col justify-center min-h-[80vh] lg:min-h-[820px]">
     <div class="max-w-[1400px] mx-auto px-4 md:px-10 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
         <!-- Left Side: Content (45%) -->
-        <div class="lg:col-span-5 space-y-10 z-20 lg:pr-8">
+        <div class="lg:col-span-5 space-y-8 z-20 lg:pr-8">
             <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
                 <h1 class="font-headline-display font-bold text-headline-display text-deep-forest leading-[1.1]">
                     Cek Risiko GERD dalam <span class="text-primary-container">2 Menit</span>
@@ -15,7 +15,7 @@
                     GERD Meter membantu Anda mengevaluasi risiko GERD secara cepat, akurat, dan personal melalui sistem pakar berbasis gejala.
                 </p>
             </div>
-            <div class="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left">
+            <div class="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left w-full">
                 <form action="{{ route('start') }}" method="POST" class="w-fit">
                     @csrf
                     <button type="submit" class="w-fit flex items-center gap-3 bg-primary-container text-white pl-8 pr-2 py-2 rounded-full font-label-sm font-medium text-lg transition-colors duration-300 hover:bg-forest-green shadow-lg shadow-primary/20 group">
@@ -25,41 +25,43 @@
                         </span>
                     </button>
                 </form>
-                <div class="flex items-center gap-2 text-label-sm font-medium text-muted-green/80 lg:ml-2 mb-4">
+                <div class="flex items-center gap-2 text-label-sm font-medium text-muted-green/80 lg:ml-2">
                     <span class="material-symbols-outlined text-[18px]">lock</span>
                     <span class="">Tanpa login • 100% Privasi Terjamin</span>
                 </div>
 
                 <!-- Mini Feature Bar -->
-                <div class="bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/50 p-6 flex flex-wrap gap-6 w-full">
-                    <!-- Feature 1 -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 shrink-0 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined text-[24px]">schedule</span>
+                <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-md shadow-emerald-900/5 border border-white/60 p-6 xl:py-6 xl:px-8 w-full xl:w-[135%] xl:max-w-none z-30 relative transition-all duration-300">
+                    <div class="grid grid-cols-1 xl:grid-cols-3 divide-y xl:divide-y-0 xl:divide-x divide-surface-container-high/80 items-center w-full">
+                        <!-- Feature 1 -->
+                        <div class="flex items-center gap-4 pb-4 xl:pb-0 xl:pr-6">
+                            <div class="w-12 h-12 shrink-0 rounded-full border border-primary-container/20 bg-primary-container/5 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[24px]">timer</span>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-base text-deep-forest mb-1 leading-none">2 Menit</h4>
+                                <p class="text-xs font-medium text-muted-green leading-normal">Pemeriksaan cepat dan praktis</p>
+                            </div>
                         </div>
-                        <div class="text-left">
-                            <h4 class="font-bold text-base text-deep-forest mb-0.5 leading-none">2 Menit</h4>
-                            <p class="text-xs font-medium text-muted-green leading-tight">Pemeriksaan cepat</p>
+                        <!-- Feature 2 -->
+                        <div class="flex items-center gap-4 py-4 xl:py-0 xl:px-6">
+                            <div class="w-12 h-12 shrink-0 rounded-full border border-primary-container/20 bg-primary-container/5 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[24px]">track_changes</span>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-base text-deep-forest mb-1 leading-none">Akurat</h4>
+                                <p class="text-xs font-medium text-muted-green leading-normal">Sistem pakar Backward Chaining</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Feature 2 -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 shrink-0 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined text-[24px]">target</span>
-                        </div>
-                        <div class="text-left">
-                            <h4 class="font-bold text-base text-deep-forest mb-0.5 leading-none">Akurat</h4>
-                            <p class="text-xs font-medium text-muted-green leading-tight">Backward Chaining</p>
-                        </div>
-                    </div>
-                    <!-- Feature 3 -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 shrink-0 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
-                            <span class="material-symbols-outlined text-[24px]">verified_user</span>
-                        </div>
-                        <div class="text-left">
-                            <h4 class="font-bold text-base text-deep-forest mb-0.5 leading-none">Aman</h4>
-                            <p class="text-xs font-medium text-muted-green leading-tight">Data terlindungi</p>
+                        <!-- Feature 3 -->
+                        <div class="flex items-center gap-4 pt-4 xl:pt-0 xl:pl-6">
+                            <div class="w-12 h-12 shrink-0 rounded-full border border-primary-container/20 bg-primary-container/5 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-[24px]">gpp_good</span>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-bold text-base text-deep-forest mb-1 leading-none">Aman & Privat</h4>
+                                <p class="text-xs font-medium text-muted-green leading-normal">Tanpa login, data Anda terlindungi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
