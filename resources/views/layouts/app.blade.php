@@ -63,7 +63,7 @@
 <nav class="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-sm border-b border-surface-container-high">
     <div class="flex justify-between items-center w-full px-6 md:px-10 lg:px-12 py-4 max-w-[1400px] mx-auto">
         <a href="{{ route('home') }}" class="text-headline-md font-headline-md font-bold text-forest-green flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <span class="material-symbols-outlined text-primary" style="font-size: 32px;">pulmonology</span>
+            <img src="{{ asset('images/logo gerd.png') }}" alt="GERD METER Logo" class="h-8 w-auto">
             GERD METER
         </a>
         <!-- Desktop Links -->
@@ -116,9 +116,7 @@
             <!-- Brand & Intro (Span 4) -->
             <div class="lg:col-span-4">
                 <div class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
-                    <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-primary text-[24px]">pulmonology</span>
-                    </div>
+                    <img src="{{ asset('images/logo gerd.png') }}" alt="GERD METER Logo" class="h-8 w-auto">
                     GERD<span class="text-primary font-medium">Meter</span>
                 </div>
                 <p class="text-white/60 text-sm leading-relaxed mb-6 pr-4">
