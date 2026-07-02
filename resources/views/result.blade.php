@@ -53,7 +53,7 @@
             <div class="absolute -bottom-10 -left-10 w-40 h-40 {{ $bgClass }} opacity-5 rounded-full blur-2xl"></div>
 
             <div class="inline-flex justify-center items-center mb-6 {{ $colorClass }} relative z-10 animate-bounce-slight">
-                {!! $icon !!}
+                <span class="text-7xl sm:text-8xl font-black tracking-tight drop-shadow-sm">{{ str_replace('.', ',', rtrim(rtrim(number_format($konsultasi->total_skor, 1, '.', ''), '0'), '.')) }}</span>
             </div>
             <p class="text-xs font-bold text-muted-green uppercase tracking-[0.2em] mb-2 relative z-10">Kesimpulan Diagnosis Awal</p>
             <h2 class="text-3xl sm:text-4xl font-black {{ $colorClass }} relative z-10">{{ $konsultasi->hasil_diagnosis }}</h2>
@@ -70,9 +70,6 @@
                 </div>
                 <div class="w-full bg-surface rounded-full h-4 overflow-hidden flex shadow-inner border border-surface-container-high">
                     <div class="h-full {{ $bgClass }} transition-all duration-1000 ease-out rounded-full shadow-[inset_0_-2px_4px_rgba(0,0,0,0.2)]" style="width: {{ $gaugeWidth }}"></div>
-                </div>
-                <div class="text-center mt-4 text-sm font-medium text-muted-green">
-                    Total Skor Keparahan: <span class="font-bold text-deep-forest text-base ml-1">{{ str_replace('.', ',', rtrim(rtrim(number_format($konsultasi->total_skor, 1, '.', ''), '0'), '.')) }}</span>
                 </div>
             </div>
 
