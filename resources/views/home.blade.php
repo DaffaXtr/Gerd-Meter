@@ -187,7 +187,7 @@
                 </div>
                 <h4 class="text-xl font-bold text-deep-forest mb-3 relative z-10">Isi Data Diri</h4>
                 <p class="text-muted-green text-sm relative z-10">
-                    Masukkan data dasar Anda tanpa perlu membuat akun panjang. Keamanan dan privasi data terjamin.
+                    Klik tombol mulai srceening. Tanpa login keamanan dan privasi data terjamin.
                 </p>
             </div>
 

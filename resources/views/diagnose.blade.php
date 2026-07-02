@@ -99,7 +99,6 @@
                 progressBar.style.width = data.progress + '%';
                 progressText.textContent = data.progress + '%';
                 
-                // Trik ampuh untuk mereset "sticky hover" di HP: clone ulang container tombolnya
                 const btns = document.querySelector('.mt-auto.grid');
                 if (btns) {
                     const newBtns = btns.cloneNode(true);
@@ -119,7 +118,6 @@
     async function submitAnswer(jawaban) {
         if (!currentGejala) return;
         
-        // Hapus fokus dari tombol agar efek hover/active tidak nyangkut di HP
         if (document.activeElement) {
             document.activeElement.blur();
         }

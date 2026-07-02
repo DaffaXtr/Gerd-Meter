@@ -30,17 +30,17 @@ class PakarSeeder extends Seeder
             [
                 'nama_penyakit' => 'GERD Ringan',
                 'tingkat_keparahan' => 'Ringan (Skor 3-5)',
-                'solusi_saran' => 'Hindari makan besar sebelum tidur. Batasi kafein, makanan pedas, dan asam. Bila perlu, konsumsi antasida over-the-counter.',
+                'solusi_saran' => 'Sistem ini hanya sebagai pendeteksi dini. Hasil menunjukkan indikasi GERD Ringan. Pantau gejala Anda secara berkala, dan jika dirasa mengganggu atau memburuk, pertimbangkan untuk berkonsultasi dengan dokter.',
             ],
             [
                 'nama_penyakit' => 'GERD Sedang',
                 'tingkat_keparahan' => 'Sedang (Skor 6-9)',
-                'solusi_saran' => 'Disarankan untuk berkonsultasi dengan dokter. Modifikasi gaya hidup ketat dan mungkin memerlukan obat resep seperti H2 blocker atau PPI (Proton Pump Inhibitor) dosis rendah.',
+                'solusi_saran' => 'Sistem ini hanya sebagai pendeteksi dini. Hasil menunjukkan indikasi GERD Sedang. Disarankan untuk berkonsultasi dengan dokter guna mendapatkan pemeriksaan dan penanganan yang tepat.',
             ],
             [
                 'nama_penyakit' => 'GERD Berat',
                 'tingkat_keparahan' => 'Berat (Skor >= 10)',
-                'solusi_saran' => 'Segera konsultasikan ke Dokter Spesialis Penyakit Dalam (Gastroenterohepatologi). Kemungkinan memerlukan evaluasi endoskopi dan terapi PPI dosis penuh.',
+                'solusi_saran' => 'Sistem ini hanya sebagai pendeteksi dini. Hasil menunjukkan indikasi GERD Berat. Segera konsultasikan kondisi Anda ke Dokter Spesialis Penyakit Dalam (Gastroenterohepatologi) untuk penanganan medis lebih lanjut.',
             ],
         ];
 

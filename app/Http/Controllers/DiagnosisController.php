@@ -88,8 +88,6 @@ class DiagnosisController extends Controller
         $currentIndex = $request->session()->get('current_index', 0);
         $request->session()->put('current_index', $currentIndex + 1);
 
-        // Hapus blok terminasi dini (Backward Chaining Rule shortcut)
-
         // Jika pertanyaan habis
         $urutan = ['GRD01', 'GRD02', 'GRD03', 'GRD04', 'GRD05', 'GRD06', 'GRD07'];
         if (($currentIndex + 1) >= count($urutan)) {

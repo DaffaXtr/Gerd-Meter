@@ -81,8 +81,8 @@
                 <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-4 -mt-4 z-0 pointer-events-none"></div>
                 
                 <h3 class="text-xl font-bold text-deep-forest mb-4 flex items-center gap-2 relative z-10">
-                    <span class="material-symbols-outlined text-primary">medical_information</span>
-                    Saran Medis & Edukasi
+                    <span class="material-symbols-outlined text-primary">health_and_safety</span>
+                    Tindak Lanjut & Edukasi
                 </h3>
                 
                 <div class="relative z-10">
@@ -107,9 +107,9 @@
                             <span class="material-symbols-outlined text-amber-600 shrink-0 mt-0.5">info</span>
                             <div>
                                 <strong class="block mb-1">Penting Diketahui:</strong> 
-                                Hasil ini merupakan analisis sistem pakar awal (Screening) dan <strong class="underline">bukan vonis medis mutlak</strong>. 
+                                Hasil ini hanya sebagai pendeteksi dini (Screening) dan <strong class="underline">bukan diagnosis medis mutlak</strong>. 
                                 @if($konsultasi->hasil_diagnosis === 'GERD Berat')
-                                    <span class="block mt-2 font-bold text-red-600">Karena tingkat risiko Anda BERAT, kami sangat menyarankan Anda segera mengunjungi fasilitas kesehatan terdekat.</span>
+                                    <span class="block mt-2 font-bold text-red-600">Karena hasil deteksi dini menunjukkan indikasi GERD Berat, segeralah mengunjungi dokter spesialis terkait.</span>
                                 @endif
                             </div>
                         </div>
